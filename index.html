@@ -8,6 +8,20 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+
+ <!-- favicon -->
+ <link rel="shortcut icon" href="./fav-icon/favicon.ico" type="image/x-icon">
+
+ <!-- fontawsome kit -->
+ <script src="https://kit.fontawesome.com/fc0aec6c77.js" crossorigin="anonymous"></script>
+
+  <!-- vanila CSS -->
+  <style>
+    .lato-fonts{
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+
 <!-- lato google font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +45,63 @@
     <!-- header section -->
     <header>
         <nav>
+            <nav class="w-3/4 mx-auto py-14">
+                <div
+                  class="bg-[#F85559] flex lg:flex-row md:flex-row flex-row-reverse  items-center justify-around rounded-full navbar bg-base-100 pt-2">
+                  <div class="navbar-start w-auto">
+                    <div class="dropdown">
+                      <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
+                          <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </label>
+                      <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                      </ul>
+                    </div>
+        
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu text-white menu-horizontal pl-1">
+                        
+                        <li tabindex="0">
+          
+                          <li><a>Home</a></li>
+                          <li><a>About Us</a></li>
+                          <li><a>Shop</a></li>
+                          <li><a>All Fruits</a></li>
+                    </div>
+                    <div class="navbar-end"></div>
+                  </div>
+                <!-- logo -->
+                    <div class="flex items-center justify-center gap-1">
+                      <div>
+                        <img class="w-6 lg:w-auto" src="./images/logo.png" alt="">
+                      </div>
+                      <div>
+                        <h1 class="lato-fonts font-semibold lg:text-4xl md:3xl text-white">Fruit Burst</h1>
+                      </div>
+                    </div>
+        
+                    <!-- srchbox -->
+        
+                    <div class="lg:block md:block hidden">
+                      
+                      <input type="lg:text" placeholder="Search here" class="input relative input-bordered w-full max-w-xs rounded-full ml-8" />
+                      <i class="lg:absolute lg:right-[250px]
+                      lg:-mt-[30px]
+                      md:absolute
+                      md:right-[124px]
+                      md:-mt-[30px]
+                      fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>     
+              </nav>
+        
 
         </nav>
     </header>
